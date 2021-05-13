@@ -160,7 +160,7 @@ export interface Client {
      *
      * **注意** 该方法需要在 join() 之前调用。
      */
-    setTurnServer(config: TurnServerConfig): void;
+    setTurnServer(config: TurnServerConfig | TurnServerConfig[]): void;
 
     /**
      * 加入一个音视频通话房间。
