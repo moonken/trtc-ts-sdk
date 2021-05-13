@@ -1,0 +1,13 @@
+{
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "TypeScript definitions for trtc-js-sdk",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/trtc-js-sdk",
+  "scripts": {},
+  "typeScriptVersion": "3.3",
+  "types": "index.d.ts",
+  "version": "4.10.1"
+}
