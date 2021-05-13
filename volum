@@ -282,10 +282,16 @@ export interface ClientConfig {
     pureAudioPushMode?: 1 | 2;
 }
 
+export interface StreamVolumeInfo {
+    userId: string; 
+    audioVolume: number;
+}
+
 /** 客户端事件 */
 export interface ClientEventMap {
     /** 远端流添加事件，当远端用户发布流后会收到该通知。 */
     'stream-added': RemoteStreamInfo;
+    'audio-volume': { result : StreamVolumeInfo[] };
     /** 远端流移除事件，当远端用户取消发布流后会收到该通知。  */
     'stream-removed': RemoteStreamInfo;
     /** 远端流更新事件，当远端用户添加、移除或更换音视频轨道后会收到该通知。 */
